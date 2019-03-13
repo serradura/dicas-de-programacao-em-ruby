@@ -2,13 +2,12 @@ class User
   attr_accessor :nome, :idade, :cidade
 
   def boasvindas
-    puts 'Seja bem-vindo ' << nome << '!'
+    puts "Seja bem-vindo #{nome}!"
     puts 'Você quer jogar?'
     puts 'Digite S ou N'
-
     resposta = gets
 
-    if resposta.downcase[0] == ('s')
+    if resposta.downcase[0] == 's'
       jogar = true
     else
       jogar = false

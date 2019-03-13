@@ -51,3 +51,31 @@ end
   bundle exec rspec
 ```
 
+## Dicas
+
+Exemplos de boas práticas de desenvolvimento de software em Ruby + técnicas de refatoração.
+
+### Dica 1
+
+Faça uso de interpolação, é mais performático que concatenar strings.
+
+```ruby
+class User
+  attr_accessor :nome, :idade, :cidade
+
+  def boasvindas
+    puts "Seja bem-vindo #{nome}!"
+    puts 'Você quer jogar um jogo?'
+    puts 'Digite S ou N'
+    resposta = gets
+
+    if resposta.downcase == 's'
+      jogar = true
+    else
+      jogar = false
+    end
+
+    return jogar
+  end
+end
+```
