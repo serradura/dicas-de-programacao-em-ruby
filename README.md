@@ -79,3 +79,42 @@ class User
   end
 end
 ```
+
+### Dica 2
+
+Use métodos privados, para:
+1. Encapsular/esconder comportamentos
+2. Melhorar a legibilidade de métodos públicos
+3. Permitir reuso
+
+```ruby
+class User
+  attr_accessor :nome, :idade, :cidade
+
+  def boasvindas
+    imprime_pergunta
+
+    resposta = gets
+
+    return prosseguir_para_o_jogo(resposta)
+  end
+
+  private
+
+  def imprime_pergunta
+    puts "Seja bem-vindo #{nome}!"
+    puts 'Você quer jogar?'
+    puts 'Digite S ou N'
+  end
+
+  def prosseguir_para_o_jogo(resposta)
+    if resposta.downcase[0] == 's'
+      jogar = true
+    else
+      jogar = false
+    end
+
+    return jogar
+  end
+end
+```
