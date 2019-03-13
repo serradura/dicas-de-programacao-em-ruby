@@ -1,0 +1,8 @@
+/tmp/
+
+## Environment normalization:
+/.bundle/
+
+.ruby-version
+.ruby-gemset
+.rvmrc
