@@ -6,6 +6,21 @@ class User
     @idade = idade
     @cidade = cidade
   end
+end
+
+class Game
+  attr_reader :user
+
+  def initialize(user)
+    @user = user
+  end
+
+  def start
+    boas_vindas
+    # Poderá receber mais métodos que venham fazer sentindo ao jogo/projeto...
+  end
+
+  private
 
   def boas_vindas
     imprime_pergunta
@@ -15,10 +30,8 @@ class User
     prosseguir_para_o_jogo?(resposta)
   end
 
-  private
-
   def imprime_pergunta
-    puts "Seja bem-vindo #{nome}!"
+    puts "Seja bem-vindo #{user.nome}!"
     puts 'Você quer jogar?'
     puts 'Digite S ou N'
   end
@@ -31,6 +44,8 @@ end
 # Uso:
 user = User.new(nome: 'André', idade: '30', cidade: 'São José do Rio Preto')
 
-if user.boasvindas
+game = Game.new(user)
+
+if game.start
   puts 'Iniciando jogo...'
 end
