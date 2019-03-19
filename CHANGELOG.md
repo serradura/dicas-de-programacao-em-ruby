@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Adicionado
+- Recomendação para praticar/desenvolver código em inglês. Kudos [@lucascaton](https://github.com/lucascaton) pelo excelente artigo, [@gmmcal](https://github.com/gmmcal) e [@jonduarte](https://github.com/jonduarte) por conversarem sobre isso no [RubyTalk (grupo do Slack sobre Ruby)](http://www.rubytalk.net/).
+
 ## [0.1.0] - 2019-03-19
 ### Adicionado
 - Suíte de testes utilizando [Rspec](https://github.com/rspec/rspec) e [Aruba](https://github.com/cucumber/aruba), para testar desde o primeiro commit o funcionamento da aplicação [(CLI)](https://pt.wikipedia.org/wiki/Interface_de_linha_de_comandos).

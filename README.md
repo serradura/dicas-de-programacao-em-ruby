@@ -12,6 +12,10 @@ Por favor registre dúvidas e/ou sugestões como [issues](https://github.com/ser
 
 A ideia deste projeto é demonstrar pequenas dicas/mudanças para aprimorar o exemplo abaixo.
 
+Por conta disso, seguiremos a proposta original implementando o código com palavras/termos em português.
+
+Porém, como é de conhecimento de mercado é recomendado que você pratique/desenvolva em inglês ([confira alguns motivos](https://www.lucascaton.com.br/2015/05/22/8-motivos-pra-programar-em-ingles/#)).
+
 ```ruby
 class User
   attr_accessor :nome, :idade, :cidade
