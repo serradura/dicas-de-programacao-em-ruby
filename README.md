@@ -93,6 +93,7 @@ Exemplos de boas práticas de desenvolvimento de software em Ruby + técnicas de
 * [`4d79c49`](https://github.com/serradura/dicas-programacao-em-ruby/compare/f86e29d..4d79c49#diff-cc95738088603531796e0d0f246a5d77) Dica 9 - Use keywords arguments [🔗](#dica-9-diff)
 * [`ec016e0`](https://github.com/serradura/dicas-programacao-em-ruby/compare/4d79c49..ec016e0#diff-cc95738088603531796e0d0f246a5d77) Dica 10 - Escreva métodos e variáveis no formato snake_case [🔗](#dica-10-diff)
 * [`66b1048`](https://github.com/serradura/dicas-programacao-em-ruby/compare/ec016e0..66b1048#diff-cc95738088603531796e0d0f246a5d77) Dica 11 - Separe classes por responsabilidade (coesão) [🔗](#dica-11-diff)
+* [`b690234`](https://github.com/serradura/dicas-programacao-em-ruby/compare/66b1048..b690234#diff-cc95738088603531796e0d0f246a5d77) Dica 12 - Organize os métodos por responsabilidade (coesão) [🔗](#dica-12-diff)
 
 ---
 
@@ -549,7 +550,7 @@ end
 
 ---
 
-### Dica 12
+### Dica 12 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/66b1048..b690234#diff-cc95738088603531796e0d0f246a5d77)]
 
 Organize os métodos de acordo com suas responsabilidades.
 Assim como as classes isso poderá facilitar a manutenção e entendimento do código.

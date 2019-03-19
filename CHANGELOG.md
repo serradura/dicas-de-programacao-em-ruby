@@ -2,7 +2,8 @@
 
 ## [Unreleased]
 ### Adicionado
-- Adiciona link para explicar o conceito de [coesão](https://pt.stackoverflow.com/a/81337).
+- Dica 12: Organize os métodos por responsabilidade (coesão)
+- Link para explicar o conceito de [coesão](https://pt.stackoverflow.com/a/81337).
 - Links sobre [interpolação](https://guru-sp.github.io/tutorial_ruby/mais-sobre-strings.html) e [condicionais com ternários](https://guru-sp.github.io/tutorial_ruby/construcoes-simples.html). Kudos [@edmilton](https://github.com/edmilton) pela colaboração!
 - Recomendação para praticar/desenvolver código em inglês. Kudos [@lucascaton](https://github.com/lucascaton) pelo excelente artigo, [@gmmcal](https://github.com/gmmcal) e [@jonduarte](https://github.com/jonduarte) por conversarem sobre isso no [RubyTalk (grupo do Slack sobre Ruby)](http://www.rubytalk.net/).
 
