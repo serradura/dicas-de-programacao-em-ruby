@@ -364,3 +364,39 @@ if user.boasvindas
   puts 'Iniciando jogo...'
 end
 ```
+
+### Dica 10
+
+Por convensão Ruby faz uso de `snake_case` na declaração de métodos e variáveis, quando o mesmo contém mais de um termo. Com isso o método *boasvindas* se torna _**boas_vindas**_.
+
+```ruby
+class User
+  attr_reader :nome, :idade, :cidade
+
+  def initialize(nome:, idade:, cidade:)
+    @nome = nome
+    @idade = idade
+    @cidade = cidade
+  end
+
+  def boas_vindas
+    imprime_pergunta
+
+    resposta = gets
+
+    prosseguir_para_o_jogo?(resposta)
+  end
+
+  private
+
+  def imprime_pergunta
+    puts "Seja bem-vindo #{nome}!"
+    puts 'Você quer jogar?'
+    puts 'Digite S ou N'
+  end
+
+  def prosseguir_para_o_jogo?(resposta)
+    resposta.downcase[0] == 's'
+  end
+end
+```

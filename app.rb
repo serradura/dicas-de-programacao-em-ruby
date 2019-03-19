@@ -7,7 +7,7 @@ class User
     @cidade = cidade
   end
 
-  def boasvindas
+  def boas_vindas
     imprime_pergunta
 
     resposta = gets
