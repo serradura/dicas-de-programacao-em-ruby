@@ -1,7 +1,7 @@
 class User
   attr_reader :nome, :idade, :cidade
 
-  def initialize(nome, idade, cidade)
+  def initialize(nome:, idade:, cidade:)
     @nome = nome
     @idade = idade
     @cidade = cidade
@@ -29,7 +29,7 @@ class User
 end
 
 # Uso:
-user = User.new('André', '30', 'São José do Rio Preto')
+user = User.new(nome: 'André', idade: '30', cidade: 'São José do Rio Preto')
 
 if user.boasvindas
   puts 'Iniciando jogo...'
