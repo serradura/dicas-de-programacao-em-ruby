@@ -100,6 +100,8 @@ Exemplos de boas práticas de desenvolvimento de software em Ruby + técnicas de
 
 Faça uso de interpolação, é mais performático que concatenar strings.
 
+<small>**[Link](https://guru-sp.github.io/tutorial_ruby/mais-sobre-strings.html)** para aprender mais sobre o assunto.</small>
+
 ```ruby
 class User
   attr_accessor :nome, :idade, :cidade
@@ -248,6 +250,8 @@ end
 ### Dica 5 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/f6300e9..9f8f36e#diff-cc95738088603531796e0d0f246a5d77)]
 
 Use um ternário para expressar condicionais simples/curtas.
+
+<small>**[Link](https://guru-sp.github.io/tutorial_ruby/construcoes-simples.html)** para aprender mais sobre o assunto.</small>
 
 ```ruby
 class User
