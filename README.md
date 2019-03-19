@@ -491,7 +491,7 @@ end
 Separe suas classes de acordo com suas responsabilidades (que conceito elas expressam?).
 Isso poderá facilitar a manutenção e entendimento do código.
 
-PS: Responsabilidade única/pouca tem haver com o que chamamos de coesão.
+PS: Responsabilidade única/pouca tem haver com o que chamamos de [coesão](https://pt.stackoverflow.com/a/81337).
 
 ```ruby
 class User
