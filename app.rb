@@ -1,5 +1,11 @@
 class User
-  attr_accessor :nome, :idade, :cidade
+  attr_reader :nome, :idade, :cidade
+
+  def initialize(nome, idade, cidade)
+    @nome = nome
+    @idade = idade
+    @cidade = cidade
+  end
 
   def boasvindas
     imprime_pergunta
@@ -23,10 +29,7 @@ class User
 end
 
 # Uso:
-user = User.new
-user.nome = 'André'
-user.idade = '30'
-user.cidade = 'São José do Rio Preto'
+user = User.new('André', '30', 'São José do Rio Preto')
 
 if user.boasvindas
   puts 'Iniciando jogo...'
