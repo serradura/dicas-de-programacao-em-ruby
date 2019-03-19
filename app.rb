@@ -16,18 +16,17 @@ class Game
   end
 
   def start
-    boas_vindas
-    # Poderá receber mais métodos que venham fazer sentindo ao jogo/projeto...
+    resposta = pergunta_se_deseja_jogar
+
+    prosseguir_para_o_jogo?(resposta)
   end
 
   private
 
-  def boas_vindas
+  def pergunta_se_deseja_jogar
     imprime_pergunta
 
-    resposta = gets
-
-    prosseguir_para_o_jogo?(resposta)
+    gets
   end
 
   def imprime_pergunta
@@ -41,9 +40,7 @@ class Game
   end
 end
 
-# Uso:
 user = User.new(nome: 'André', idade: '30', cidade: 'São José do Rio Preto')
-
 game = Game.new(user)
 
 if game.start

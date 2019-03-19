@@ -538,9 +538,79 @@ class Game
 end
 
 user = User.new(nome: 'André', idade: '30', cidade: 'São José do Rio Preto')
-
 game = Game.new(user)
-game.start
+
+if game.start
+  puts 'Iniciando jogo...'
+end
+```
+
+<small>[🔝 Ir para menu de dicas](#dicas)</small>
+
+---
+
+### Dica 12
+
+Organize os métodos de acordo com suas responsabilidades.
+Assim como as classes isso poderá facilitar a manutenção e entendimento do código.
+
+PS: Essa prática também tem haver com o que chamamos de [coesão](https://pt.stackoverflow.com/a/81337).
+
+**Mudança:**
+
+Perceba que na versão anterior, o método `boas_vindas` tem diversas responsabilidades.
+Além disso, ele retorna um boolean e não aplica a convenção de predicado ([nem sempre isso será necessário](https://api.rubyonrails.org/classes/ActiveRecord/Persistence.html#method-i-save)).
+
+**O que fizemos para melhorar?**
+
+Nessa versão o início do jogo (start), tem duas etapas:
+1. Começa com uma pergunta
+2. Processa a resposta para resolver se o mesmo será ou não iniciado.
+
+Dada essa estrutura, criamos métodos para representar cada uma dessas etapas.
+
+```ruby
+class User
+  attr_reader :nome, :idade, :cidade
+
+  def initialize(nome:, idade:, cidade:)
+    @nome = nome
+    @idade = idade
+    @cidade = cidade
+  end
+end
+
+class Game
+  attr_reader :user
+
+  def initialize(user)
+    @user = user
+  end
+
+  def start
+    resposta = pergunta_se_deseja_jogar
+
+    prosseguir_para_o_jogo?(resposta)
+  end
+
+  private
+
+  def pergunta_se_deseja_jogar
+    imprime_pergunta
+
+    gets
+  end
+
+  def imprime_pergunta
+    puts "Seja bem-vindo #{user.nome}!"
+    puts 'Você quer jogar?'
+    puts 'Digite S ou N'
+  end
+
+  def prosseguir_para_o_jogo?(resposta)
+    resposta.downcase[0] == 's'
+  end
+end
 ```
 
 <small>[🔝 Ir para menu de dicas](#dicas)</small>
