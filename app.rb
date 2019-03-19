@@ -19,12 +19,10 @@ class User
 
   def prosseguir_para_o_jogo(resposta)
     if resposta.downcase[0] == 's'
-      jogar = true
+      true
     else
-      jogar = false
+      false
     end
-
-    return jogar
   end
 end
 

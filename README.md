@@ -118,3 +118,38 @@ class User
   end
 end
 ```
+
+### Dica 3
+
+Remova variáveis caso o valor atribuído seja o último a ser retornado.
+(Mudança: Foi removido a variável `jogar` do método `prosseguir_para_o_jogo`).
+
+```ruby
+class User
+  attr_accessor :nome, :idade, :cidade
+
+  def boasvindas
+    imprime_pergunta
+
+    resposta = gets
+
+    return prosseguir_para_o_jogo(resposta)
+  end
+
+  private
+
+  def imprime_pergunta
+    puts "Seja bem-vindo #{nome}!"
+    puts 'Você quer jogar?'
+    puts 'Digite S ou N'
+  end
+
+  def prosseguir_para_o_jogo(resposta)
+    if resposta.downcase[0] == 's'
+      true
+    else
+      false
+    end
+  end
+end
+```
