@@ -247,3 +247,33 @@ class User
   end
 end
 ```
+
+### Dica 7
+
+Métodos sempre retornam o resultado da última linha, logo o uso de return se torna opcional/desnecessário.
+
+```ruby
+class User
+  attr_accessor :nome, :idade, :cidade
+
+  def boasvindas
+    imprime_pergunta
+
+    resposta = gets
+
+    prosseguir_para_o_jogo?(resposta)
+  end
+
+  private
+
+  def imprime_pergunta
+    puts "Seja bem-vindo #{nome}!"
+    puts 'Você quer jogar?'
+    puts 'Digite S ou N'
+  end
+
+  def prosseguir_para_o_jogo?(resposta)
+    resposta.downcase[0] == 's'
+  end
+end
+```

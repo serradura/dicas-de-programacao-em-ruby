@@ -6,7 +6,7 @@ class User
 
     resposta = gets
 
-    return prosseguir_para_o_jogo?(resposta)
+    prosseguir_para_o_jogo?(resposta)
   end
 
   private
