@@ -6,7 +6,7 @@ class User
 
     resposta = gets
 
-    return prosseguir_para_o_jogo(resposta)
+    return prosseguir_para_o_jogo?(resposta)
   end
 
   private
@@ -17,7 +17,7 @@ class User
     puts 'Digite S ou N'
   end
 
-  def prosseguir_para_o_jogo(resposta)
+  def prosseguir_para_o_jogo?(resposta)
     if resposta.downcase[0] == 's'
       true
     else
