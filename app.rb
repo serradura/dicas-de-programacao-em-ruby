@@ -18,11 +18,7 @@ class User
   end
 
   def prosseguir_para_o_jogo?(resposta)
-    if resposta.downcase[0] == 's'
-      true
-    else
-      false
-    end
+    resposta.downcase[0] == 's' ? true : false
   end
 end
 
