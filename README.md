@@ -55,7 +55,19 @@ end
 
 Exemplos de boas práticas de desenvolvimento de software em Ruby + técnicas de refatoração.
 
-### Dica 1
+* [`400d121`](https://github.com/serradura/dicas-programacao-em-ruby/compare/f42f6b9..400d121) Dica 1 - Interpolação [🔗](#dica-1-diff)
+* [`11445ef`](https://github.com/serradura/dicas-programacao-em-ruby/compare/400d121..11445ef) Dica 2 - Use métodos privados [🔗](#dica-2-diff)
+* [`824501f`](https://github.com/serradura/dicas-programacao-em-ruby/compare/11445ef..824501f) Dica 3 - Remova variáveis desnecessárias [🔗](#dica-3-diff)
+* [`f6300e9`](https://github.com/serradura/dicas-programacao-em-ruby/compare/824501f..f6300e9) Dica 4 - Defina métodos predicativos [🔗](#dica-4-diff)
+* [`9f8f36e`](https://github.com/serradura/dicas-programacao-em-ruby/compare/f6300e9..9f8f36e) Dica 5 - Ternário [🔗](#dica-5-diff)
+* [`b7fb557`](https://github.com/serradura/dicas-programacao-em-ruby/compare/9f8f36e..b7fb557) Dica 6 - Elimine a condicional quando o retorno for um boolean [🔗](#dica-6-diff)
+* [`baeb46e`](https://github.com/serradura/dicas-programacao-em-ruby/compare/b7fb557..baeb46e) Dica 7 - return é opcional quando usado na última linha de um método [🔗](#dica-7-diff)
+* [`f86e29d`](https://github.com/serradura/dicas-programacao-em-ruby/compare/baeb46e..f86e29d) Dica 8 - Use o construtor + getters (métodos somente leitura) [🔗](#dica-8-diff)
+* [`4d79c49`](https://github.com/serradura/dicas-programacao-em-ruby/compare/f86e29d..4d79c49) Dica 9 - Use keywords arguments [🔗](#dica-9-diff)
+* [`ec016e0`](https://github.com/serradura/dicas-programacao-em-ruby/compare/4d79c49..ec016e0) Dica 10 - Escreva métodos e variáveis no formato snake_case [🔗](#dica-10-diff)
+* [`66b1048`](https://github.com/serradura/dicas-programacao-em-ruby/compare/ec016e0..66b1048) Dica 11 - Separe classes por responsabilidade (coesão) [🔗](#dica-11-diff)
+
+### Dica 1 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/f42f6b9..400d121)]
 
 Faça uso de interpolação, é mais performático que concatenar strings.
 
@@ -80,7 +92,7 @@ class User
 end
 ```
 
-### Dica 2
+### Dica 2 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/400d121..11445ef)]
 
 Use métodos privados, para:
 1. Encapsular/esconder comportamentos
@@ -119,7 +131,7 @@ class User
 end
 ```
 
-### Dica 3
+### Dica 3 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/11445ef..824501f)]
 
 Remova variáveis caso o valor atribuído seja o último a ser retornado.
 (Mudança: Foi removido a variável `jogar` do método `prosseguir_para_o_jogo`).
@@ -154,7 +166,7 @@ class User
 end
 ```
 
-### Dica 4
+### Dica 4 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/824501f..f6300e9)]
 
 Defina métodos predicativos (terminam com `?` - interrogação) quando o resultado do mesmo for um `boolean` (`true` ou `false`).
 
@@ -188,7 +200,7 @@ class User
 end
 ```
 
-### Dica 5
+### Dica 5 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/f6300e9..9f8f36e)]
 
 Use um ternário para expressar condicionais simples/curtas.
 
@@ -218,7 +230,7 @@ class User
 end
 ```
 
-### Dica 6
+### Dica 6 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/9f8f36e..b7fb557)]
 
 Elimine o ternário/expressão condicional quando o retorno for um boolean.
 
@@ -248,7 +260,7 @@ class User
 end
 ```
 
-### Dica 7
+### Dica 7 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/b7fb557..baeb46e)]
 
 Métodos sempre retornam o resultado da última linha, logo o uso de return se torna opcional/desnecessário.
 
@@ -278,7 +290,7 @@ class User
 end
 ```
 
-### Dica 8
+### Dica 8 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/baeb46e..f86e29d)]
 
 Faça uso do construtor + getters (métodos de leitura) para evitar que o estados do(s) seu(s) objetos se corrompa por conta de uma manipulação indevida/equivocada.
 
@@ -322,7 +334,7 @@ if user.boasvindas
 end
 ```
 
-### Dica 9
+### Dica 9 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/f86e29d..4d79c49)]
 
 Faça uso de keywords arguments para tornar os argumentos/dependências de seus métodos mais expressivos.
 
@@ -365,7 +377,7 @@ if user.boasvindas
 end
 ```
 
-### Dica 10
+### Dica 10 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/4d79c49..ec016e0)]
 
 Por convensão Ruby faz uso de `snake_case` na declaração de métodos e variáveis, quando o mesmo contém mais de um termo. Com isso o método *boasvindas* se torna _**boas_vindas**_.
 
@@ -401,7 +413,7 @@ class User
 end
 ```
 
-### Dica 11
+### Dica 11 [[diff](https://github.com/serradura/dicas-programacao-em-ruby/compare/ec016e0..66b1048)]
 
 Separe suas classes de acordo com suas responsabilidades (que conceito elas expressam?).
 Isso poderá facilitar a manutenção e entendimento do código.
